@@ -15,18 +15,16 @@ body {
 }
 
 #profileName {
-    text-align: center;
     font-size: 1.8rem;
     color: black;
-    margin-left: 280px;
+    margin-left: 400px;
 }
 
 #username {
-    text-align: center;
     font-size: 1.8rem;
     color: #ff7722;
     font-weight: bold;
-    margin-left: 280px;
+    margin-left: 400px;
 }
 
 #bioLine {
