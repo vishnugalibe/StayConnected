@@ -1,163 +1,118 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #ffe8c8;
+    margin: 0;
+    padding: 0;
     font-family: "Times New Roman", serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Profile Section */
-.profile-container {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #profilePicture {
-    width: 180px;
-    height: 180px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff7722;
-    margin-bottom: 15px;
+    display: block;
+    margin: 30px auto;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 #profileName {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 5px;
     text-align: center;
+    font-size: 1.8rem;
+    color: black;
+    margin: 10px 0;
 }
 
 #username {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
     color: #ff7722;
     font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: 5px 0 20px;
 }
 
 #bioLine {
+    text-align: center;
     font-size: 1.2rem;
     color: black;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: 15px 20px;
 }
 
-/* Links Section */
 .linkBox {
-    width: 100%;
-    max-width: 600px;
-    height: 60px;
     border: 2px solid black;
     border-radius: 30px;
-    background-color: #ff7722;
-    margin: 15px 0;
+    width: 80%;
+    max-width: 600px;
+    height: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 30px auto;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.linkBox:hover {
-    transform: scale(1.02);
-    background-color: #e6691e;
+    background-color: #ff7722;
 }
 
 .linkText {
     text-decoration: none;
+    text-align: center;
     color: white;
     font-size: 1.2rem;
-    font-weight: bold;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Footer Section */
 #lastLine {
-    width: 100%;
-    max-width: 700px;
+    margin: 40px auto;
     border: 2px solid #ff7722;
     border-radius: 15px;
-    padding: 15px;
-    margin-top: 30px;
+    width: 80%;
+    max-width: 700px;
+    height: 70px;
     text-align: center;
-    font-size: 1rem;
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 hr {
-    width: 100%;
-    max-width: 600px;
-    border: none;
-    height: 2px;
     background-color: #ff7722;
-    margin: 20px 0;
+    height: 2px;
+    width: 80%;
+    max-width: 680px;
+    margin: 20px auto;
+    border: none;
 }
 
-/* Responsive Adjustments */
+/* Media Queries for different screen sizes */
 @media (max-width: 768px) {
-    #profileName {
-        font-size: 1.8rem;
+    #profileName, #username {
+        font-size: 1.5rem;
     }
     
-    #username {
-        font-size: 1.3rem;
-    }
-    
-    .linkBox {
-        height: 55px;
+    .linkBox, #lastLine {
+        height: 50px;
     }
     
     .linkText {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     #profilePicture {
-        width: 150px;
-        height: 150px;
+        max-width: 150px;
     }
     
-    #profileName {
-        font-size: 1.5rem;
-    }
-    
-    #username {
-        font-size: 1.1rem;
+    #profileName, #username {
+        font-size: 1.3rem;
     }
     
     #bioLine {
         font-size: 1rem;
     }
     
-    .linkBox {
-        height: 50px;
-        border-radius: 25px;
-    }
-    
-    .linkText {
-        font-size: 1rem;
+    .linkBox, #lastLine {
+        height: 45px;
+        border-radius: 20px;
     }
     
     #lastLine {
-        font-size: 0.9rem;
-        padding: 10px;
+        height: 60px;
     }
 }
