@@ -18,7 +18,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
     color: black;
-    margin: 30px auto;
+    margin-top: 550px;
 }
 
 #username {
@@ -26,7 +26,7 @@ body {
     font-size: 1.8rem;
     color: #ff7722;
     font-weight: bold;
-    margin: 30px auto;
+    margin-top: 550px;
 }
 
 #bioLine {
