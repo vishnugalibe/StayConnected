@@ -12,6 +12,8 @@ body {
     max-width: 200px;
     width: 100%;
     height: auto;
+    border: 2px solid #ff7722;
+    padding: 4px;
 }
 
 #profileName {
